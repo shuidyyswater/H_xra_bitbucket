@@ -1,0 +1,38 @@
+{
+    "name": "XrayHeroku",
+    "description": "xray websocket proxy on heroku",
+    "keywords": ["xray vmess vless trojan shadowsocks socks tor"],
+    "env": {
+        "AA": {
+            "description": "Advanced users only need to modify the following AUUID and click the Deploy app button at the end of the page to start deployment",
+            "value": "If you got some errors, please check the parameter format or try again. To use custom parameters, be sure to fully understand their meanings first"
+        },
+        "AUUID": {
+            "description": "UUID acts as the path and account password of each configuration. It is recommended to modify and save it properly. UUID website can be generated: https://www.uuidgenerator.net",
+            "value": "7b38971d-dece-453a-a5bf-100faa095a49"
+        },
+        "CADDYIndexPage": {
+            "description": "CADDYIndexPage",
+            "value": "www.crazygames.com"
+        },
+        "CONFIGCADDY": {
+            "description": "Please do not modify it if you are not familiar with the CADDY configuration",
+            "value": "https://bitbucket.org/qkirinname/h_xr/raw/a180c66332e3c133f1cc755d8a1af2662ef57f5f/Caddyfile"
+        },
+        "CONFIGXRAY": {
+            "description": "User-defined network address. Read configuration to run xray, please do not modify it if you are not familiar with xray configuration",
+            "value": "https://bitbucket.org/qkirinname/h_xr/raw/a180c66332e3c133f1cc755d8a1af2662ef57f5f/xray.json"
+        },
+        "ParameterSSENCYPT": {
+            "description": "SS encryption method, check the support agreement: https://www.v2fly.org/config/protocols/shadowsocks.html",
+            "value": "chacha20-ietf-poly1305"
+        },
+        "StoreFiles": {
+            "description": "User-defined network address to read the list of stored files",
+            "value": "https://bitbucket.org/qkirinname/h_xr/raw/a180c66332e3c133f1cc755d8a1af2662ef57f5f/StoreFiles"
+        }
+    },
+    "website": "https://github.com/shuidyyswater/H_xra_bitbucket",
+    "repository": "https://github.com/shuidyyswater/H_xra_bitbucket",
+    "stack": "container"
+}
